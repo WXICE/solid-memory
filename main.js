@@ -46,16 +46,6 @@ function validate() {
             alert("No special characters must be inclued in your email");
             return false;
         }
-        else if(email2.test(email))
-        {
-            alert("Your email must be valid");
-            return false;
-        }
-        else if(email1.test(email))
-        {
-            alert("Your email must be valid");
-            return false;
-        }
         else
             alert("Valid!");            
             document.getElementById("contactform").submit();
