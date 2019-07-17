@@ -82,6 +82,18 @@
       <button type="submit" onclick="formcheck(); return false;">Send</button>
       <!-- <input class="button" value="Submit" onclick="validate(); contactsub();"></br> -->
     </form>
+<script>
+  function formcheck() {
+    var fields = $(".ss-item-required")
+          .find("select, textarea, input").serializeArray();
+    
+    $.each(fields, function(i, field) {
+      if (!field.value)
+        alert(field.name + ' is required');
+     }); 
+    console.log(fields);
+  }
+</script>
     <form id="formhid" class="col-md-6 col-xs-6">
       <p style="font-weight:bold;">Get in Touch</p>
       <div class="row formtext fname col-xs-12">
