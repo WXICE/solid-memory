@@ -29,7 +29,8 @@ function validate() {
             alert("Please enter a valid Phone Number");
             }
             else{
-                alert("Valid!");
+                alert("Valid!");            
+                document.getElementById("contactform").onsubmit();
                 return true;
             }
     }
