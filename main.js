@@ -13,7 +13,6 @@ function validate() {
         document.getElementById("fname").style.backgroundColor = "indianred";
         alert("Please enter a first name");
 
-   
     }
     else if (lname == "" || lname == null) {
         document.getElementById("lname").style.backgroundColor = "indianred";
@@ -32,6 +31,27 @@ function validate() {
     }
 
 }
+function specialchar()
+{
+    var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+if(format.test(string)){
+  return true;
+} else {
+  return false;
+}
+}
+function formcheck() {
+    var fields = $(".ss-item-required")
+          .find("select, textarea, input").serializeArray();
+    
+    $.each(fields, function(i, field) {
+      if (!field.value)
+        alert(field.name + ' is required');
+     }); 
+    console.log(fields);
+  }
+
 function contactsub() {
     if (okay == true) {
         var fname = document.forms["contactform"]["fname"].value;
