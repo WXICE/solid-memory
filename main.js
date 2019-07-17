@@ -22,17 +22,31 @@ function validate() {
         document.getElementById("email").style.backgroundColor = "indianred";
         alert("Please enter an email");
     }
-    else {
-            if(num == ""|| num == null||isNaN(num))
-            {
-                document.getElementById("num").style.backgroundColor = "indianred";
-            alert("Please enter a valid Phone Number");
-            }
-            else{
-                alert("Valid!");            
-                document.getElementById("contactform").submit();
-            }
+    else if(num == ""|| num == null||isNaN(num)){
+        document.getElementById("num").style.backgroundColor = "indianred";
+        alert("Please enter a valid Phone Number");
     }
+    else
+    {
+        var format = /[!#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]+/;
+        if(format.test(fname))
+        {
+            alert("No special characters must be inclued in your firstname")
+        }
+        else if (format.test(lname))
+        {
+            alert("No special characters must be inclued in your lastname")
+        }
+        else if(format.test(email))
+        {
+            alert("No special characters must be inclued in your email")
+        }
+        else
+            alert("Valid!");            
+            document.getElementById("contactform").submit();
+        }
+    }
+
 }
 // function specialchar()
 // {
