@@ -28,7 +28,9 @@ function validate() {
     }
     else
     {
-        var format = /[!#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]+/;
+        var format = /[!#$%^&*()_+\=\[\]{};':"\\|,<>\/?]+/;
+        var email2 = @;
+        var email1 = .;
         if(format.test(fname)) 
         {
             alert("No special characters must be inclued in your firstname")
@@ -42,6 +44,16 @@ function validate() {
         else if(format.test(email))
         {
             alert("No special characters must be inclued in your email");
+            return false;
+        }
+        else if(email2.test(email))
+        {
+            alert("Your email must be valid");
+            return false;
+        }
+        else if(email1.test(email))
+        {
+            alert("Your email must be valid");
             return false;
         }
         else
