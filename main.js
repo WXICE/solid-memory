@@ -46,8 +46,6 @@ function validate() {
             document.getElementById("contactform").submit();
         }
     }
-
-}
 // function specialchar()
 // {
 //     var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
