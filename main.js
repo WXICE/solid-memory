@@ -29,17 +29,20 @@ function validate() {
     else
     {
         var format = /[!#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]+/;
-        if(format.test(fname))
+        if(format.test(fname)) 
         {
             alert("No special characters must be inclued in your firstname")
+            return false;
         }
         else if (format.test(lname))
         {
-            alert("No special characters must be inclued in your lastname")
+            alert("No special characters must be inclued in your lastname");
+            return false;
         }
         else if(format.test(email))
         {
-            alert("No special characters must be inclued in your email")
+            alert("No special characters must be inclued in your email");
+            return false;
         }
         else
             alert("Valid!");            
