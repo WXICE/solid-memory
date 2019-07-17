@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jacob's Window Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.jpg" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.jpg" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="lib/animate/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top justify-content-center">
+    <div class="menutext col-md-7">
+      <a class="navbar-brand nav-hover" href="index.html">JWS</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="banner2">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32232.618633615177!2d-2.483224660279741!3d53.0975559449531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a453052544847%3A0xf9ed0703788b83a!2sCrewe!5e0!3m2!1sen!2suk!4v1563267774058!5m2!1sen!2suk"
+      width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div id="contactmain">
+    <table id="contacttext" class="col-md-4 col-sm-6">
+      <tr>
+        <th class="right">Mobile Number:</th>
+        <th><a>01270 809121</a></th>
+      </tr>
+      <tr>
+        <th class="right">Address:</th>
+        <th><a>12 Sycamore Drive</a></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th><a>Crewe</a></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th><a>Cheshire</a></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th><a>CW1 2ND</a></th>
+      </tr>
+    </table>
+    <form id="contactform" class="col-md-6 col-xs-6">
+      <p style="font-weight:bold;">Lets have a Conversation</p>
+      <div class="row formtext col-xs-6">
+        <p style="font-weight:bold; padding:0px;" class="col-md-5 col-xs-3">First Name</p>
+        <p style="font-weight:bold; padding:0px;" class="col-md-5 offset-md-2 col-xs-3">Last Name</p>
+      </div>
+      <div class="row formtext col-xs-6">
+        <input idtype="text" id="fname" class="inp col-md-5 col-xs-6">
+        
+      <input type="text" id="lname" class="inp col-md-5 offset-md-2 col-xs-6"></br>
+    </div>
+    <div class="row formtext col-xs-6">
+      <p style="font-weight:bold; padding:0px;" class="col-md-5 col-xs-3">Email:</p>
+        <p style="font-weight:bold; padding:0px;" class="col-md-5 offset-md-2 col-xs-3">Phone Number:</p>
+      </div>
+      <div class="row formtext col-xs-6">
+        <input type="text" id="email" class="inp col-md-5 col-xs-6"></br>
+      <input type="text" id="num" class="inp col-md-5 offset-md-2 col-xs-6"></br>
+      </div>
+      </br>
+      <input class="button" value="Submit" onclick="validate(); contactsub();"></br>
+    </form>
+    <form id="formhid" class="col-md-6 col-xs-6">
+      <p style="font-weight:bold;">Get in Touch</p>
+      <div class="row formtext fname col-xs-12">
+        <p style="font-weight:bold; padding:0px;" class="col-xs-12">First Name: </p>
+        <input type="text" name="fnamehid" class="col-xs-12"></br>
+      </div>
+      <div class="row formtext fname col-xs-12">
+        <p style="font-weight:bold; padding:0px;" class="col-xs-12">Last Name: </p>
+        <input type="text" name="lnamehid" class="col-xs-12"></br>
+      </div>
+      <p style="font-weight:bold;">Email Address:</p>
+      <input type="text" name="email"></br>
+      </br>
+      <input class="button" value="Submit"></br>
+    </form>
+  </div>
+  </div>
+  <footer>
+    <ul class="footlist col-sm-6">
+      <li class="footitem">
+        <a class="footlink" href="#">Page1</a>
+      </li>
+      <li class="footitem">
+        <a class="footlink" href="#">Page2</a>
+      </li>
+      <li class="footitem">
+        <a class="footlink" href="#">Page3</a>
+      </li>
+      <li class="footitem">
+        <a class="footlink" href="#">Page4</a>
+      </li>
+    </ul>
+    <ul class="footlist col-sm-6">
+        <li class="footitem">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+        </li>
+        <li class="footitem">
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        </li>
+    </ul>
+  </footer>
+  <script src="lib/wow/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
