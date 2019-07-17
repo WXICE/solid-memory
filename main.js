@@ -28,35 +28,38 @@ function validate() {
                 document.getElementById("num").style.backgroundColor = "indianred";
             alert("Please enter a valid Phone Number");
             }
+            else{
+                alert("Valid!");
+                return true;
+            }
     }
+}
+// function specialchar()
+// {
+//     var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 
-}
-function specialchar()
-{
-    var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
-
-if(format.test(string)){
-  return true;
-} else {
-  return false;
-}
-}
-function formcheck() {
-    var fields = $(".ss-item-required")
-          .find("select, textarea, input").serializeArray();
+// if(format.test(string)){
+//   return true;
+// } else {
+//   return false;
+// }
+// }
+// function formcheck() {
+//     var fields = $(".ss-item-required")
+//           .find("select, textarea, input").serializeArray();
     
-    $.each(fields, function(i, field) {
-      if (!field.value)
-        alert(field.name + ' is required');
-     }); 
-    console.log(fields);
-  }
+//     $.each(fields, function(i, field) {
+//       if (!field.value)
+//         alert(field.name + ' is required');
+//      }); 
+//     console.log(fields);
+//   }
 
-function contactsub() {
-    if (okay == true) {
-        var fname = document.forms["contactform"]["fname"].value;
-        var lname = document.forms["contactform"]["lname"].value;
-        var email = document.forms["contactform"]["email"].value;
-        var num = document.forms["contactform"]["num"].value;
-    }
-}
+// function contactsub() {
+//     if (okay == true) {
+//         var fname = document.forms["contactform"]["fname"].value;
+//         var lname = document.forms["contactform"]["lname"].value;
+//         var email = document.forms["contactform"]["email"].value;
+//         var num = document.forms["contactform"]["num"].value;
+//     }
+// }

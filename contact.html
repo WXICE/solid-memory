@@ -79,21 +79,8 @@
       <input type="text" name="num" id="num" class="ss-item-required inp col-md-5 offset-md-2 col-xs-6"/></br>
       </div>
       </br>
-      <button type="submit" onclick="formcheck(); return false;">Send</button>
-      <!-- <input class="button" value="Submit" onclick="validate(); contactsub();"></br> -->
+      <button type="submit" onclick="validate();">Send</button>
     </form>
-<script>
-  function formcheck() {
-    var fields = $(".ss-item-required")
-          .find("select, textarea, input").serializeArray();
-    
-    $.each(fields, function(i, field) {
-      if (!field.value)
-        alert(field.name + ' is required');
-     }); 
-    console.log(fields);
-  }
-</script>
     <form id="formhid" class="col-md-6 col-xs-6">
       <p style="font-weight:bold;">Get in Touch</p>
       <div class="row formtext fname col-xs-12">
@@ -107,7 +94,7 @@
       <p style="font-weight:bold;">Email Address:</p>
       <input type="text" name="email"></br>
       </br>
-        <button type="submit" class="button" onclick="validate">Submit</button>
+        <button type="submit" class="button" onclick="validate(); ">Submit</button>
     </form>
   </div>
   </div>
