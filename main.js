@@ -30,8 +30,7 @@ function validate() {
             }
             else{
                 alert("Valid!");            
-                document.getElementById("contactform").onsubmit();
-                return true;
+                document.getElementById("contactform").submit();
             }
     }
 }
