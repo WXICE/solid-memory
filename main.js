@@ -23,7 +23,7 @@ function validate() {
         alert("Please enter an email");
     }
     else {
-            if(num == ""|| num == null||isNaN(num1))
+            if(num == ""|| num == null||isNaN(num))
             {
                 document.getElementById("num").style.backgroundColor = "indianred";
             alert("Please enter a valid Phone Number");
