@@ -29,8 +29,8 @@ function validate() {
     else
     {
         var format = /[!#$%^&*()_+\=\[\]{};':"\\|,<>\/?]+/;
-        var email2 = @;
-        var email1 = .;
+        var email2 = ("@");
+        var email1 = (".");
         if(format.test(fname)) 
         {
             alert("No special characters must be inclued in your firstname")
