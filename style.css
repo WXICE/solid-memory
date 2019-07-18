@@ -163,8 +163,9 @@ z-index: 999999;
 }
 #homemain2 .boxes .box:hover
 {
-    transition: color 1s ease;
+    transition: color 0.5s ease;
     color: #ffffff;
+    text-shadow: 2px 2px 2px black;
 }
 .button {
     background-color: #ffffff;
@@ -256,6 +257,17 @@ footer {
     margin-right: auto;
     flex-wrap: initial;
 }
+#spinner
+{
+    height:100vh;
+    position: fixed;
+    width:100%;
+    background-color: #fcc531;
+    z-index: 10000000;
+    background-position: center;
+    background-repeat: none;
+    background-image: url("img/preloader.gif");
+}
 .footlist a
 {
     color: #b6b6b6; 
@@ -301,7 +313,7 @@ footer {
     padding-bottom: 20px;
     padding-top: 80px;
     width: 90%;
-    height: 100vh;
+    height: 125vh;
     margin-left: auto;
     margin-right: auto;
     background-color: white;

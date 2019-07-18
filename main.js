@@ -1,3 +1,4 @@
+
 var okay;
 function validate() {
     document.getElementById("fname").style.backgroundColor = "white";
@@ -28,21 +29,22 @@ function validate() {
     }
     else
     {
-        var format = /[!#$%^&*()_+\=\[\]{};':"\\|,<>\/?]+/;
-        var email2 = ("@");
-        var email1 = (".");
+        var format = /[!#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]+/;
         if(format.test(fname)) 
         {
-            alert("No special characters must be inclued in your firstname")
+            alert("No special characters must be inclued in your firstname");
+            document.getElementById("fname").style.backgroundColor = "indianred";
             return false;
         }
         else if (format.test(lname))
         {
             alert("No special characters must be inclued in your lastname");
+            document.getElementById("lname").style.backgroundColor = "indianred";
             return false;
         }
         else if(format.test(email))
         {
+            document.getElementById("num").style.backgroundColor = "indianred";
             alert("No special characters must be inclued in your email");
             return false;
         }
@@ -51,32 +53,30 @@ function validate() {
             document.getElementById("contactform").submit();
         }
     }
-// function specialchar()
-// {
-//     var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
-
-// if(format.test(string)){
-//   return true;
-// } else {
-//   return false;
-// }
-// }
-// function formcheck() {
-//     var fields = $(".ss-item-required")
-//           .find("select, textarea, input").serializeArray();
-    
-//     $.each(fields, function(i, field) {
-//       if (!field.value)
-//         alert(field.name + ' is required');
-//      }); 
-//     console.log(fields);
-//   }
-
-// function contactsub() {
-//     if (okay == true) {
-//         var fname = document.forms["contactform"]["fname"].value;
-//         var lname = document.forms["contactform"]["lname"].value;
-//         var email = document.forms["contactform"]["email"].value;
-//         var num = document.forms["contactform"]["num"].value;
-//     }
-// }
+    function preloader()
+    {
+        document.getElementById("spinner").style.display = "block";
+        sleep((Math.random()) * ((2000 - 1000)) + 1000);
+        document.getElementById("spinner").style.display = "none";
+    }
+    function sleep(milliseconds) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+          if ((new Date().getTime() - start) > milliseconds){
+            break;
+          }
+        }
+      }
+      function getdetails(){
+        $.ajax({
+          url: 'form.php?',
+          cache: false,
+          type: 'POST',
+          data: {
+            cow: "moo"
+          },
+          success: function(data){
+              alert(data);
+          }
+        })
+    }

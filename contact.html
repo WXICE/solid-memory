@@ -17,7 +17,8 @@
   <meta charset="UTF-8">
 </head>
 
-<body>
+<body  onload="preloader();">
+    <div id="spinner" style="display: block; background-repeat: no-repeat;"></div>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top justify-content-center">
     <div class="menutext col-md-7">
       <a class="navbar-brand nav-hover" href="index.html">JWS</a>
@@ -99,31 +100,30 @@
   </div>
   </div>
   <footer>
+      <ul class="footlist col-sm-6">
+             <li class="footitem">
+                 <a class="footlink" href="index.html">Home</a>
+             </li>
+             <li class="footitem">
+                 <a class="footlink" href="about.html">About Us</a>
+             </li>
+             <li class="footitem">
+                 <a class="footlink" href="#">Contact Us</a>
+             </li>
+             <li class="footitem">
+                 <a class="footlink" href="#">Back to Top</a>
+             </li>
+         </ul>
      <ul class="footlist col-sm-6">
-            <li class="footitem">
-                <a class="footlink" href="index.html">Home</a>
-            </li>
-            <li class="footitem">
-                <a class="footlink" href="#">About Us</a>
-            </li>
-            <li class="footitem">
-                <a class="footlink" href="contact.html">Contact Us</a>
-            </li>
-            <li class="footitem">
-                <a class="footlink" href="#">Back to Top</a>
-            </li>
-        </ul>
-    <ul class="footlist col-sm-6">
-            <li class="footitem">
-                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
-            </li>
-            <li class="footitem">
-                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-                <a href="https://www.snapchat.com" class="fa fa-snapchat"></a>
-            </li>
-        </ul>
-  </footer>
+             <li class="footitem">
+                 <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                 <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+             </li>
+             <li class="footitem">
+                 <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                 <a href="https://www.snapchat.com" class="fa fa-snapchat"></a>
+             </li>
+         </ul>
   <script src="lib/wow/wow.min.js"></script>
   <script>
     new WOW().init();
