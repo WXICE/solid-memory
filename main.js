@@ -69,7 +69,7 @@ function validate() {
       }
       function getdetails(){
         $.ajax({
-          url: 'form.php',
+          url: '../form.php',
           cache: false,
           type: 'POST',
           data: {
