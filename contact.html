@@ -16,9 +16,7 @@
   <script src="main.js"></script>
   <meta charset="UTF-8">
 </head>
-
-<body onload="preloader();">
-    <?php
+<?php
     $conn = mysqli_connect('localhost','iceuser','invalid','Andrew')
   
     // Check connection
@@ -28,6 +26,9 @@
   echo "Connected successfully";
   
   ?>
+
+<body onload="preloader();">
+
   <div id="spinner" style="display: block; background-repeat: no-repeat;"></div>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top justify-content-center">
     <div class="menutext col-md-7">

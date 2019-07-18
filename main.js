@@ -68,18 +68,21 @@ function validate() {
         }
       }
       function getdetails(){
-          console.log("Yo!");
-          var xhttp = new XMLHttpRequest();
-          xhttp.open("GET", "form.php", true);
-        // $.ajax({
-        //   url: 'form.php?',
-        //   cache: false,
-        //   type: 'POST',
-        //   data: {
-        //     cow: "moo"
-        //   },
-        //   success: function(data){
-        //       alert(data);
-        //   }
-        // })
+        //   console.log("Yo!");
+        //   var xhttp = new XMLHttpRequest();
+        //   xhttp.open("GET", "form.php", true);
+        // // $.ajax({
+        // //   url: 'form.php?',
+        // //   cache: false,
+        // //   type: 'POST',
+        // //   data: {
+        // //     cow: "moo"
+        // //   },
+        // //   success: function(data){
+        // //       alert(data);
+        // //   }
+        // // })
+        $.ajax({url: "/form.php", error: function(xhr){
+            alert("An error occured: " + xhr.status + " " + xhr.statusText);
+        }});
     }
