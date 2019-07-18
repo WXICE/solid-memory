@@ -17,8 +17,18 @@
   <meta charset="UTF-8">
 </head>
 
-<body  onload="preloader();">
-    <div id="spinner" style="display: block; background-repeat: no-repeat;"></div>
+<body onload="preloader();">
+    <?php
+    $conn = mysqli_connect('localhost','iceuser','invalid','Andrew')
+  
+    // Check connection
+  if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
+  }
+  echo "Connected successfully";
+  
+  ?>
+  <div id="spinner" style="display: block; background-repeat: no-repeat;"></div>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top justify-content-center">
     <div class="menutext col-md-7">
       <a class="navbar-brand nav-hover" href="index.html">JWS</a>
@@ -60,7 +70,8 @@
         <th><a>CW1 2ND</a></th>
       </tr>
     </table>
-    <form id="contactform" class="col-md-6 col-xs-6" name="contactform" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form id="contactform" class="col-md-6 col-xs-6" name="contactform" method="post" data-netlify="true"
+      data-netlify-honeypot="bot-field">
       <p style="font-weight:bold;">Lets have a Conversation</p>
       <div class="row formtext col-xs-6">
         <p style="font-weight:bold; padding:0px;" class="col-md-5 col-xs-3">First Name</p>
@@ -68,16 +79,16 @@
       </div>
       <div class="row formtext col-xs-6">
         <input type="text" name="fname" id="fname" class="inp col-md-5 col-xs-6">
-        
-      <input type="text" name="lname" id="lname" class="inp col-md-5 offset-md-2 col-xs-6"></br>
-    </div>
-    <div class="row formtext col-xs-6">
-      <p style="font-weight:bold; padding:0px;" class="col-md-5 col-xs-3">Email:</p>
+
+        <input type="text" name="lname" id="lname" class="inp col-md-5 offset-md-2 col-xs-6"></br>
+      </div>
+      <div class="row formtext col-xs-6">
+        <p style="font-weight:bold; padding:0px;" class="col-md-5 col-xs-3">Email:</p>
         <p style="font-weight:bold; padding:0px;" class="col-md-5 offset-md-2 col-xs-3">Phone Number:</p>
       </div>
       <div class="row formtext col-xs-6">
-        <input type="text" name="email" id="email" class="inp col-md-5 col-xs-6"/></br>
-      <input type="text" name="num" id="num" class="inp col-md-5 offset-md-2 col-xs-6"/></br>
+        <input type="text" name="email" id="email" class="inp col-md-5 col-xs-6" /></br>
+        <input type="text" name="num" id="num" class="inp col-md-5 offset-md-2 col-xs-6" /></br>
       </div>
       </br>
       <input class="button" value="Submit" onclick="validate();">
@@ -95,39 +106,39 @@
       <p style="font-weight:bold;">Email Address:</p>
       <input type="text" name="email"></br>
       </br>
-        <button type="submit" class="button" onclick="validate">Submit</button>
+      <button type="submit" class="button" onclick="validate">Submit</button>
     </form>
   </div>
   </div>
   <footer>
-      <ul class="footlist col-sm-6">
-             <li class="footitem">
-                 <a class="footlink" href="index.html">Home</a>
-             </li>
-             <li class="footitem">
-                 <a class="footlink" href="about.html">About Us</a>
-             </li>
-             <li class="footitem">
-                 <a class="footlink" href="#">Contact Us</a>
-             </li>
-             <li class="footitem">
-                 <a class="footlink" href="#">Back to Top</a>
-             </li>
-         </ul>
-     <ul class="footlist col-sm-6">
-             <li class="footitem">
-                 <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-                 <a href="https://www.twitter.com" class="fa fa-twitter"></a>
-             </li>
-             <li class="footitem">
-                 <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-                 <a href="https://www.snapchat.com" class="fa fa-snapchat"></a>
-             </li>
-         </ul>
-  <script src="lib/wow/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+    <ul class="footlist col-sm-6">
+      <li class="footitem">
+        <a class="footlink" href="index.html">Home</a>
+      </li>
+      <li class="footitem">
+        <a class="footlink" href="about.html">About Us</a>
+      </li>
+      <li class="footitem">
+        <a class="footlink" href="#">Contact Us</a>
+      </li>
+      <li class="footitem">
+        <a class="footlink" href="#">Back to Top</a>
+      </li>
+    </ul>
+    <ul class="footlist col-sm-6">
+      <li class="footitem">
+        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+      </li>
+      <li class="footitem">
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        <a href="https://www.snapchat.com" class="fa fa-snapchat"></a>
+      </li>
+    </ul>
+    <script src="lib/wow/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+﻿Things to finish off:'✓' = Done	'-' = Not entirely finished 'X' = Not Started
+
+1.	Website Home page creation			                        	 	✓
+2.	Navigation Links				                            		✓
+3.	Banner area creation					                           	✓	
+4.	Content creation				                                 	✓
+5.	Footer creation							                            ✓
+6.	Upload website to a hosting service			                    	✓
+7.	Website Contact page creation				                    	✓
+8.	Contact form creation						                        ✓
+9. 	Need to add functionality to the 'contact us' page forms	        ✓
+10.	The Contact us page's link to the about us section is Wrong         X
+11. Additional Validation onto the form                                 X
+12. Add Database functionality                                          X
