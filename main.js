@@ -82,7 +82,9 @@ function validate() {
         // //       alert(data);
         // //   }
         // // })
-        $.ajax({url: "/form.php", error: function(xhr){
-            alert("An error occured: " + xhr.status + " " + xhr.statusText);
-        }});
+        var name = "a";
+        var age = 1;
+        $.post('./form.php',{postname:name,postage:age}, function(data){ 
+            alert(data);
+        });
     }
